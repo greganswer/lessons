@@ -25,8 +25,8 @@ Once the tests pass, it should display output similar to the following:
         with non west coast order
           is expected to eq "ABC"
       when providers contains ABC and Home Entry
-	  is expected to raise MultipleProvidersError
-	with 3 providers
-	  is expected to raise MultipleProvidersErro
-	with empty providers
-	  is expected to raise MissingProvidersError
+          is expected to raise MultipleProvidersError
+        with 3 providers
+          is expected to raise MultipleProvidersErro
+        with empty providers
+          is expected to raise MissingProvidersError
