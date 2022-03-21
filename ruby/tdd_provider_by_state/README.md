@@ -1,4 +1,4 @@
-First install the gems by executing the following:
+First fork and clone the repo locally. Then install the gems by executing the following:
 
     bundle
 
