@@ -63,22 +63,22 @@ RSpec.describe 'provider_by_state' do
   context 'when providers contains ABC and Home Entry' do
     let(:providers) { [abc_provider, home_entry_provider, road_tec_provider] }
 
-		# If this exception occurs, we should update the code to handle it better.
+    # If this exception occurs, we should update the code to handle it better.
     it { expect { subject }.to raise_error(MultipleProvidersError) }
   end
 
   context 'with 3 providers' do
     let(:providers) { [abc_provider, road_tec_provider, home_entry_provider] }
 
-		# If this exception occurs, we should update the code to handle it better.
+    # If this exception occurs, we should update the code to handle it better.
     it { expect { subject }.to raise_error(MultipleProvidersError) }
   end
 
-	# Unskip this test to demonstrate the importance of TDD.
+  # Unskip this test to demonstrate the importance of TDD.
   xcontext 'with 4 providers' do
     let(:providers) { [abc_provider, road_tec_provider, home_entry_provider, OpenStruct.new] }
 
-		# If this exception occurs, we should update the code to handle it better.
+    # If this exception occurs, we should update the code to handle it better.
     it { expect { subject }.to raise_error(MultipleProvidersError) }
   end
 
