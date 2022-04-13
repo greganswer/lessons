@@ -6,6 +6,8 @@ To execute tests, run the following:
 
     bundle exec rspec main_spec.rb -f d
 
+To make the tests pass, add your code to `main.rb`. You can ignore the `fib_spec.rb` file for now. 
+
 Once the tests pass, it should display output similar to the following:
 
     provider_by_state
